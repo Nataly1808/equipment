@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@300;400;500;700&display=swap">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-about.css" />
+	<link rel="stylesheet" href="css/style-card.css" />
+	<title>Card</title>
+</head>
+
+<body>
+	<svg style="display: none;">
+		<symbol viewBox="0 0 24 24" id="search">
+			<path
+				d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+				stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M21 21L16.65 16.65" stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round"
+				stroke-linejoin="round" />
+		</symbol>
+
+		<symbol viewBox="0 0 24 24" id="cart">
+			<path
+				d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+				stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			<path
+				d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+				stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			<path
+				d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+				stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+		</symbol>
+
+		<symbol viewBox="0 0 20 20" id="mouse">
+			<path d="M2.5 2.5L8.39167 16.6417L10.4833 10.4833L16.6417 8.39167L2.5 2.5Z" stroke="white" stroke-width="1.6"
+				stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M10.8334 10.8334L15.8334 15.8334" stroke="white" stroke-width="1.6" stroke-linecap="round"
+				stroke-linejoin="round" />
+		</symbol>
+
+		<symbol viewBox="0 0 20 20" id="cart-2">
+			<path
+				d="M7.49996 18.3333C7.9602 18.3333 8.33329 17.9602 8.33329 17.5C8.33329 17.0397 7.9602 16.6666 7.49996 16.6666C7.03972 16.6666 6.66663 17.0397 6.66663 17.5C6.66663 17.9602 7.03972 18.3333 7.49996 18.3333Z"
+				stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			<path
+				d="M16.6667 18.3333C17.1269 18.3333 17.5 17.9602 17.5 17.5C17.5 17.0397 17.1269 16.6666 16.6667 16.6666C16.2065 16.6666 15.8334 17.0397 15.8334 17.5C15.8334 17.9602 16.2065 18.3333 16.6667 18.3333Z"
+				stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			<path
+				d="M0.833374 0.833374H4.16671L6.40004 11.9917C6.47624 12.3754 6.68496 12.72 6.98966 12.9653C7.29436 13.2106 7.67562 13.3409 8.06671 13.3334H16.1667C16.5578 13.3409 16.9391 13.2106 17.2438 12.9653C17.5484 12.72 17.7572 12.3754 17.8334 11.9917L19.1667 5.00004H5.00004"
+				stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+		</symbol>
+	</svg>
+
+	<div class="wraper">
+		<div class="header">
+			<div class="container">
+				<div class="header__top">
+					<div class="header__top-left">
+						<div class="header__menu">
+							<ul class="header__nav">
+								<li>
+									<a href="#" class="link header__link">О нас</a>
+								</li>
+								<li>
+									<a href="#" class="link header__link">Аренда</a>
+								</li>
+								<li>
+									<a href="#" class="link header__link">Вендоры</a>
+								</li>
+								<li>
+									<a href="#" class="link header__link">Акции</a>
+								</li>
+								<li>
+									<a href="#" class="link header__link">Доставка</a>
+								</li>
+								<li>
+									<a href="#" class="link header__link">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__top-right">
+						<div class="header__contact">
+							<ul class="header__connection">
+								<li>
+									<div class="header__envelope">
+										<img src="img/main-img/mail.png" alt="#">
+									</div>
+									<a href="mailto:vld9@yandex.ru" class="header__email">vld9@yandex.ru</a>
+								</li>
+								<li>
+									<div class="header__telephone-one">
+										<img src="img/main-img/telephone.png" alt="#">
+									</div>
+									<a href="tel:8 800 000 22 22" class="header__number">8 800 000 22 22</a>
+								</li>
+								<li>
+									<div class="header__telephone-tow">
+										<img src="img/main-img/telephone.png" alt="#">
+									</div>
+									<a href="tel:+7 (343) 206 11 99" class="header__number">+7 (343) 206 11 99</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="header__bottom">
+					<div class="header__bottom-left">
+						<div class="header__logo">
+							<a href="index.html"><img src="img/main-img/logo.png" alt=""></a>
+						</div>
+						<div class="header__name">
+							<h2 class="h2">Видно</h2>
+							<h2 class="h2 header__h2">Всем</h2>
+						</div>
+					</div>
+					<div class="header__bottom-right">
+						<div class="header__catalog">
+							<button class="header__catalog-btn batton btn--yellow">
+								<a href="#" class="header__catalog-link link">Каталог</a>
+								<div class="header__menu-burger menu-burger">
+									<span></span>
+								</div>
+							</button>
+							<div class="header__catalog-menu">
+								<ul class="header__chapter">
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Видеостены</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Cветодиодные экраны для помещения</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Cветодиодные экраны для улицы</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Интерактивные дисплеи</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Интерактивные дисплеи Benq</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные дисплеи Prestigio Multiboard</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные дисплеи Samsung</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные дисплеи Sharp</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Интерактивное оборудование</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Зеркала интерактивные</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные доски IQBoard</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные доски SMART</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные планшеты TRIUMPH BOARD</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные столы Livesystems</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Интерактивные системы</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Интерактивное голосование</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Система "Интерактивный пол"</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Стабилотренажеры и стабилоплатформы</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Логопедическое оборудование</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Логопедические столы</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Мультимедийное оборудование</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Проекторы в аренду</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Мобильные классы</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Устройства транспортно-зарядные (тележки для
+													ноутбуков)</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Программное обеспечение</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Для интерактивного дисплея</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Для сенсорного стола</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные игры</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Интерактивные тренажеры</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Карты подключения услуг Zyxel</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Проекционная техника</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Проекторы BENQ</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Проекторы Panasonic</a>
+											</li>
+										</ul>
+									</li>
+									<li class="header__chapter-name">
+										<a href="#" class="chapter__link">Промышленное оборудование</a>
+										<ul class="header__product">
+											<li>
+												<a href="#" class="product__link">Взрывобезопасные мониторы</a>
+											</li>
+											<li>
+												<a href="#" class="product__link">Защищенные мониторы</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__categories">
+							<form>
+								<div class="header__categories-left">
+									<div class="header__allcategories">
+										<a href="#" class="header__allcategories-link link">Все категории</a>
+										<div class="header__allcategories-btn categories-btn">
+											<img src="img/main-img/categories.png" alt="">
+										</div>
+										<div class="header__categories-menu">
+											<ul class="header__categories-list">
+												<li>
+													<a href="#" class="categories__link link">Программное обеспечение</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Интерактивные системы</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Видеостены</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Интерактивные дисплеи</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Логопедическое оборудование</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Проекционная техника</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Мультимедийное оборудование</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Интерактивное оборудование</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Промышленное оборудование</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Мобильные классы</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="header__categories-right">
+									<input class="header__search link" type="text" placeholder="Поиск">
+									<button class="header__search-btn" type="submit">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#search"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+							</form>
+						</div>
+						<div class="header__basket">
+							<a href="" class="header__cart cart-btn">
+								<span class="icon">
+									<svg>
+										<use xlink:href="#cart"></use>
+									</svg>
+								</span>
+								<span class="cart-counter">3</span>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="container">
+				<div class="card__way crumbs">
+					<ul class="card__list crumbs-list">
+						<li><a class="card__link link crumbs-link" href="index.html">Главная</a></li>
+						<li><a class="card__link link crumbs-link" href="category.html">Интерактивные дисплеи</a></li>
+						<li><a class="card__link link crumbs-link" href="card.html">Сенсорная панель 40″ Samsung 400TS-3и</a>
+						</li>
+					</ul>
+				</div>
+				<h1 class="card__title h1">Сенсорная панель 40″ Samsung 400TS-3</h1>
+				<div class="card__main">
+					<div class="card__main-left">
+						<div class="card__slider">
+							<div class="card__slider-main">
+								<div class="slider__main-img">
+									<img src="img/card/slider-panel.png" alt="">
+								</div>
+								<div class="slider__button">
+								<button class="slider__increase">
+									<img src="img/card/zoom.png" alt="">
+								</button>
+								<div class="slider__btn">
+									
+								</div>
+							</div>
+							</div>
+							<div class="card__slider-transition">
+								<div class="transition__item">
+									<img src="img/card/slide1.png" alt="">
+								</div>
+								<div class="transition__item">
+									<img src="img/card/slide2.png" alt="">
+								</div>
+								<div class="transition__item">
+									<img src="img/card/slide3.png" alt="">
+								</div>
+								<div class="transition__item">
+									<img src="img/card/slide4.png" alt="">
+								</div>
+								<div class="transition__item">
+									<img src="img/card/slide5.png" alt="">
+								</div>
+								<div class="transition__item">
+									<img src="img/card/slide6.png" alt="">
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="card__main-right">
+						<div class="card__text text">
+							<p>
+								Профессиональная 40-дюймовая сенсорная панель Samsung. Имеет встроенный компьютер и все
+								коммуникационные интерфейсы. Идеальное решение для систем Digital Signage.
+							</p>
+							<p>
+								Samsung 400TS-3 — это широкоформатный профессиональный сенсорный мультитач монитор, который
+								способен показывать изображение в формате Full HD (FHD) с четким текстом. Он имеет 40″ дисплей с
+								узкими рамками, благодаря чему привлекает клиентов четким и ярким изображением и реалистичными
+								цветами на тонком дисплее.
+							</p>
+							<p>
+								Эта модель построена на базе профессиональной матрицы и электроники, которая позволяет работать
+								в режиме 24/7 без выключений.
+							</p>
+						</div>
+						<div class="card__price">
+							89 000 ₽
+						</div>
+						<div class="card__purchase">
+							<div class="card__purchas-row">
+								<div class="card__buy">
+									<a href="">Купить в один клик</a>
+									<span class="icon">
+										<svg>
+											<use xlink:href="#mouse"></use>
+										</svg>
+									</span>
+								</div>
+								<div class="card__cart">
+									<a href="">Добавить в корзину</a>
+									<span class="icon">
+										<svg>
+											<use xlink:href="#cart-2"></use>
+										</svg>
+									</span>
+								</div>
+							</div>
+							<div class="card__purchas-row">
+								<div class="card__special-price">
+									<a href="">Запросить спеццену в проект</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="card__form">
+			<div class="container">
+				<div class="main__ask">
+					<div class="main__ask-left">
+						<div class="ask__title form-title">
+							Хотите задать вопрос?
+						</div>
+						<p class="ask-text text">
+							Оставьте заявку, наш специалист свяжется с вами и ответит на все интересующие вас вопросы
+						</p>
+					</div>
+					<div class="main__ask-right">
+						<form action="" method="post">
+							<div class="ask__wraper">
+								<textarea class="input" name="message" id="message" placeholder="Ваш вопрос"></textarea>
+							</div>
+							<div class="ask__wraper-row">
+								<div class="ask__wraper">
+									<input type="text" class="input ask-phone" name="phone" id="phone"
+										placeholder="+7 (___) ___-__-__" required="required">
+								</div>
+								<div class="ask__wraper">
+									<input type="text" class="input ask-email" name="email" id="email" placeholder="email"
+										required="required">
+								</div>
+							</div>
+							<div class="ask__wraper-row">
+								<div class="ask__wraper open-popup-two">
+									<input type="submit" value="Задать вопрос" class="ask-btn batton btn--yellow">
+								</div>
+								<div class="ask__wraper">
+									<div class="ask__agree">
+										<div class="agree__text">
+											Нажимая кнопку я соглашаюсь
+											с <a href="" class="agree__politics">политикой конфиденциальности</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__left">
+						<div class="footer__logo">
+							<div class="footer__logo-img">
+								<a href=""><img src="img/main-img/logo.png" alt=""></a>
+							</div>
+							<div class="footer__name">
+								<h2 class="h2">Видно</h2>
+								<h2 class="h2 footer__h2">Всем</h2>
+							</div>
+						</div>
+						<div class="footer__text footer-content">
+							Интерактивные и визуальные <br> решения для образования.<br>
+							Интерактивное и мультимедийное <br> оборудование.
+						</div>
+					</div>
+					<div class="footer__right">
+						<div class="footer__item">
+							<div class="footer__title">
+								Покупателям
+							</div>
+							<div class="footer__menu">
+								<ul class="footer__nav">
+									<li>
+										<a href="#" class="footer__link footer-content">О нас</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Акции</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Аренда</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Доставка</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Вендоры</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Контакты</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__item">
+							<div class="footer__title">
+								Контакты
+							</div>
+							<div class="footer__connection">
+								<ul class="footer__connection-nav">
+									<li>
+										<div class="footer__telephone">
+											<img src="img/main-img/telephone.png" alt="#">
+										</div>
+										<a href="tel:+7 (343) 206 11 99" class="footer__number footer-content">+7 (343) 206 11
+											99</a>
+									</li>
+									<li>
+										<div class="footer__label">
+											<img src="img/main-img/label.png" alt="#">
+										</div>
+										<a href="" class="footer__address footer-content">г. Екатеринбург, ул. Менделеева, д.
+											18</a>
+									</li>
+									<li>
+										<div class="footer__envelope">
+											<img src="img/main-img/mail.png" alt="#">
+										</div>
+										<a href="mailto:vld9@yandex.ru" class="footer__email footer-content">vld9@yandex.ru</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<ul>
+						<li class="footer-content">
+							2009-2021 © Видно Всем
+						</li>
+						<li>
+							<a href="" class="footer-content">Политика конфиденциальности</a>
+						</li>
+						<li class="footer-content">
+							Не является публичной офертой
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="developed">
+			<div class="container">
+				<div class="developed__text footer-content">
+					Разработано в Develex
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popup-two">
+		<div class="popup-two__application popup__application">
+			<div class="popup-two__container">
+				<div class="popup__close">
+				</div>
+				<div class="popup-tow__title form-title">
+					Cпасибо
+				</div>
+				<div class="popup-two__text text">
+					ваша заявка успешно отправлена, наш специалист свяжется с вами в ближайшее время
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="slick/slick.css" />
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@300;400;500;700&display=swap">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-category.css" />
+	<link rel="stylesheet" href="css/style-search.css" />
+	<title>Search-result</title>
+</head>
+
+<body>
+
+	<body>
+		<svg style="display: none;">
+			<symbol viewBox="0 0 24 24" id="search">
+				<path
+					d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+					stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M21 21L16.65 16.65" stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round"
+					stroke-linejoin="round" />
+			</symbol>
+
+			<symbol viewBox="0 0 24 24" id="cart">
+				<path
+					d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+					stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+				<path
+					d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+					stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+				<path
+					d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+					stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			</symbol>
+			<symbol viewBox="0 0 20 20" id="cart-product">
+				<path
+					d="M7.49999 18.3333C7.96023 18.3333 8.33332 17.9602 8.33332 17.5C8.33332 17.0397 7.96023 16.6666 7.49999 16.6666C7.03975 16.6666 6.66666 17.0397 6.66666 17.5C6.66666 17.9602 7.03975 18.3333 7.49999 18.3333Z"
+					stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+				<path
+					d="M16.6667 18.3333C17.1269 18.3333 17.5 17.9602 17.5 17.5C17.5 17.0397 17.1269 16.6666 16.6667 16.6666C16.2064 16.6666 15.8333 17.0397 15.8333 17.5C15.8333 17.9602 16.2064 18.3333 16.6667 18.3333Z"
+					stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+				<path
+					d="M0.833344 0.833374H4.16668L6.40001 11.9917C6.47621 12.3754 6.68493 12.72 6.98963 12.9653C7.29433 13.2106 7.67559 13.3409 8.06668 13.3334H16.1667C16.5578 13.3409 16.939 13.2106 17.2437 12.9653C17.5484 12.72 17.7571 12.3754 17.8333 11.9917L19.1667 5.00004H5.00001"
+					stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			</symbol>
+		</svg>
+
+		<div class="wraper">
+			<div class="header">
+				<div class="container">
+					<div class="header__top">
+						<div class="header__top-left">
+							<div class="header__menu">
+								<ul class="header__nav">
+									<li>
+										<a href="about.html" class="link header__link">О нас</a>
+									</li>
+									<li>
+										<a href="#" class="link header__link">Аренда</a>
+									</li>
+									<li>
+										<a href="#" class="link header__link">Вендоры</a>
+									</li>
+									<li>
+										<a href="#" class="link header__link">Акции</a>
+									</li>
+									<li>
+										<a href="#" class="link header__link">Доставка</a>
+									</li>
+									<li>
+										<a href="#" class="link header__link">Контакты</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__top-right">
+							<div class="header__contact">
+								<ul class="header__connection">
+									<li>
+										<div class="header__envelope">
+											<img src="img/main-img/mail.png" alt="#">
+										</div>
+										<a href="mailto:vld9@yandex.ru" class="header__email">vld9@yandex.ru</a>
+									</li>
+									<li>
+										<div class="header__telephone-one">
+											<img src="img/main-img/telephone.png" alt="#">
+										</div>
+										<a href="tel:8 800 000 22 22" class="header__number">8 800 000 22 22</a>
+									</li>
+									<li>
+										<div class="header__telephone-tow">
+											<img src="img/main-img/telephone.png" alt="#">
+										</div>
+										<a href="tel:+7 (343) 206 11 99" class="header__number">+7 (343) 206 11 99</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__bottom">
+						<div class="header__bottom-left">
+							<div class="header__logo">
+								<a href=""><img src="img/main-img/logo.png" alt=""></a>
+							</div>
+							<div class="header__name">
+								<h2 class="h2">Видно</h2>
+								<h2 class="h2 header__h2">Всем</h2>
+							</div>
+						</div>
+						<div class="header__bottom-right">
+							<div class="header__catalog">
+								<button class="header__catalog-btn batton btn--yellow">
+									<a href="#" class="header__catalog-link link">Каталог</a>
+									<div class="header__menu-burger menu-burger">
+										<span></span>
+									</div>
+								</button>
+								<div class="header__catalog-menu">
+									<ul class="header__chapter">
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Видеостены</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Cветодиодные экраны для помещения</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Cветодиодные экраны для улицы</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="category.html" class="chapter__link">Интерактивные дисплеи</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Интерактивные дисплеи Benq</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные дисплеи Prestigio Multiboard</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные дисплеи Samsung</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные дисплеи Sharp</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Интерактивное оборудование</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Зеркала интерактивные</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные доски IQBoard</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные доски SMART</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные планшеты TRIUMPH BOARD</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные столы Livesystems</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Интерактивные системы</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Интерактивное голосование</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Система "Интерактивный пол"</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Стабилотренажеры и стабилоплатформы</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Логопедическое оборудование</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Логопедические столы</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Мультимедийное оборудование</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Проекторы в аренду</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Мобильные классы</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Устройства транспортно-зарядные (тележки для
+														ноутбуков)</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Программное обеспечение</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Для интерактивного дисплея</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Для сенсорного стола</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные игры</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Интерактивные тренажеры</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Карты подключения услуг Zyxel</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Проекционная техника</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Проекторы BENQ</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Проекторы Panasonic</a>
+												</li>
+											</ul>
+										</li>
+										<li class="header__chapter-name">
+											<a href="#" class="chapter__link">Промышленное оборудование</a>
+											<ul class="header__product">
+												<li>
+													<a href="#" class="product__link">Взрывобезопасные мониторы</a>
+												</li>
+												<li>
+													<a href="#" class="product__link">Защищенные мониторы</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="header__categories">
+								<form>
+									<div class="header__categories-left">
+										<div class="header__allcategories">
+											<a href="#" class="header__allcategories-link link">Все категории</a>
+											<div class="header__allcategories-btn categories-btn">
+												<img src="img/main-img/categories.png" alt="">
+											</div>
+											<div class="header__categories-menu">
+												<ul class="header__categories-list">
+													<li>
+														<a href="#" class="categories__link link">Программное обеспечение</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Интерактивные системы</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Видеостены</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Интерактивные дисплеи</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Логопедическое оборудование</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Проекционная техника</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Мультимедийное оборудование</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Интерактивное оборудование</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Промышленное оборудование</a>
+													</li>
+													<li>
+														<a href="#" class="categories__link link">Мобильные классы</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="header__categories-right">
+										<input class="header__search link" type="text" placeholder="Поиск" value="Сенсорная панель">
+										<button class="header__search-btn" type="submit">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#search"></use>
+												</svg>
+											</span>
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="header__basket">
+								<a href="" class="header__cart cart-btn">
+									<span class="icon">
+										<svg>
+											<use xlink:href="#cart"></use>
+										</svg>
+									</span>
+									<span class="cart-counter">3</span>
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="panel category">
+				<div class="container">
+					<h1 class=" panel__title h1">Сенсорная панель</h1>
+					<div class="panel__top-text link">Найдено 154 резульата по запросу Сенсорная панель</div>
+					<div class="panel__main category__main">
+						<div class="panel__column category__column">
+							<div class="panel__item category__item">
+								<div class="panel__img category__img">
+									<img src="img/category-img/category1.png" alt="">
+								</div>
+								<div class="panel__description category__description">
+									<a href="" class="panel__name category__name">Сенсорная панель 40″ Samsung 400TS-3</a>
+									<div class="panel__text category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="panel__buy category__buy">
+									<div class="panel__price category__price">
+										89 000 ₽
+									</div>
+									<div class="panel__cart category__cart">
+										<a href="" class="panel__cart-btn category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel__column category__column">
+							<div class="panel__item category__item">
+								<div class="panel__img category__img">
+									<img src="img/category-img/category2.png" alt="">
+								</div>
+								<div class="panel__description category__description">
+									<a href="" class="panel__name category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="panel__text category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										224 000 ₽
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<div class="category__img">
+									<img src="img/category-img/category3.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										214 000 ₽
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<span class="category__item-span category-discount">-10%</span>
+								<div class="category__img">
+									<img src="img/category-img/category4.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										<span>101 000 ₽</span>
+										<div>89 000 ₽</div>
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<div class="category__img">
+									<img src="img/category-img/category4.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										<span>101 000 ₽</span>
+										<div>89 000 ₽</div>
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<span class="category__item-span category-new">новинка</span>
+								<div class="category__img">
+									<img src="img/category-img/category3.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										214 000 ₽
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<div class="category__img">
+									<img src="img/category-img/category1.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										89 000 ₽
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<span class="category__item-span category-hit">хит продаж</span>
+								<div class="category__img">
+									<img src="img/category-img/category2.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										224 000 ₽
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<div class="category__img">
+									<img src="img/category-img/category1.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										89 000 ₽
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<span class="category__item-span category-discount">-10%</span>
+								<div class="category__img">
+									<img src="img/category-img/category4.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										<span>101 000 ₽</span>
+										<div>89 000 ₽</div>
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<div class="category__img">
+									<img src="img/category-img/category2.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										224 000 ₽
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="category__column">
+							<div class="category__item">
+								<div class="category__img">
+									<img src="img/category-img/category3.png" alt="">
+								</div>
+								<div class="category__description">
+									<a href="" class="category__name">
+										Сенсорная панель 40″ Samsung 400TS-3
+									</a>
+									<div class="category__text">
+										Профессиональная 40-дюймовая сенсорная панель Samsung.
+									</div>
+								</div>
+								<div class="category__buy">
+									<div class="category__price">
+										214 000 ₽
+									</div>
+									<div class="category__cart">
+										<a href="" class="category__cart-btn">
+											<span class="icon">
+												<svg>
+													<use xlink:href="#cart-product"></use>
+												</svg>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="category__pagination">
+						<a href="#" class="pagination-btn link">
+							<img src="img/category-img/Vector.png" alt="" class="previous">
+						</a>
+						<a href="#" class="pagination-btn link">1</a>
+						<a href="#" class="pagination-btn link">2</a>
+						<a href="#" class="pagination-btn link">3</a>
+						<a href="#" class="pagination-btn link active-page">4</a>
+						<a href="#" class="pagination-btn link">5</a>
+						<a href="#" class="pagination-btn link">6</a>
+						<a href="#" class="pagination-btn link">7</a>
+						<a href="#" class="pagination-btn link">...</a>
+						<a href="#" class="pagination-btn link">34</a>
+						<a href="#" class="pagination-btn link">
+							<img src="img/category-img/Vector.png" alt="" class="next">
+						</a>
+					</div>
+					<div class="category__button">
+						<a href="" class="category__button-link batton btn--yellow">Показать еще</a>
+					</div>
+				</div>
+			</div>
+			<div class="section-grey">
+				<div class="analogue">
+					<div class="container">
+						<div class="analogue__top">
+							<h1 class="analogue__title h1">Похожие категории</h1>
+						</div>
+						<div class="analogue__slider">
+							<div class="analogue__slider-column">
+								<div class="analogue__slider-item">
+									<div class="analogue__slider-category">
+										<a href="" class="analogue__slider-link text">Интерактивные <br> системы</a>
+									</div>
+									<div class="analogue__slider-img">
+										<img src="img/main-img/image4.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analogue__slider-column">
+								<div class="analogue__slider-item">
+									<div class="analogue__slider-category">
+										<a href="" class="analogue__slider-link text">Видеостены</a>
+									</div>
+									<div class="analogue__slider-img">
+										<img src="img/main-img/image5.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analogue__slider-column">
+								<div class="analogue__slider-item">
+									<div class="analogue__slider-category">
+										<a href="" class="analogue__slider-link text">Мобильные классы</a>
+									</div>
+									<div class="analogue__slider-img">
+										<img src="img/main-img/image6.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analogue__slider-column">
+								<div class="analogue__slider-item">
+									<div class="analogue__slider-category">
+										<a href="" class="analogue__slider-link text">Мультимедийное оборудование</a>
+									</div>
+									<div class="analogue__slider-img">
+										<img src="img/main-img/image7.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analogue__slider-column">
+								<div class="analogue__slider-item">
+									<div class="analogue__slider-category">
+										<a href="" class="analogue__slider-link text">Интерактивные <br> системы</a>
+									</div>
+									<div class="analogue__slider-img">
+										<img src="img/main-img/image4.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analogue__slider-column">
+								<div class="analogue__slider-item">
+									<div class="analogue__slider-category">
+										<a href="" class="analogue__slider-link text">Видеостены</a>
+									</div>
+									<div class="analogue__slider-img">
+										<img src="img/main-img/image5.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analogue__slider-column">
+								<div class="analogue__slider-item">
+									<div class="analogue__slider-category">
+										<a href="" class="analogue__slider-link text">Мобильные классы</a>
+									</div>
+									<div class="analogue__slider-img">
+										<img src="img/main-img/image6.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="analogue__slider-column">
+								<div class="analogue__slider-item">
+									<div class="analogue__slider-category">
+										<a href="" class="analogue__slider-link text">Мультимедийное оборудование</a>
+									</div>
+									<div class="analogue__slider-img">
+										<img src="img/main-img/image7.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="callback">
+					<div class="container">
+						<div class="callback__wraper">
+							<div class="callback__left">
+								<div class="callback__title form-title">
+									Не нашли нужного товара?
+								</div>
+								<p class="callback__text text">
+									Оставьте заявку и мы свяжемся с вами и поможем подобрать нужный вам товар
+								</p>
+							</div>
+							<div class="callback__right">
+								<form action="" method="post">
+									<div class="callback__row">
+										<div class="callback__number">
+											<input type="text" class="input callback__phone" name="phone" id="phone"
+												placeholder="+7 (___) ___-__-__" required="required">
+										</div>
+										<div class="callback__button open-popup-two">
+											<input type="submit" value="Перезвоните мне" class="callback__btn batton btn--yellow">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="interactive">
+					<div class="container">
+						<h1 class="interactive__title h1">
+							Продажа интерактивного оборудования
+						</h1>
+						<div class="interactive__text text">
+							<p>
+								«ВидноВсем» — это сайт для того, что бы выделить ходовые варианты из огромного ассортимента
+								интерактивного и мультимедийного оборудования. За этим сервисом стоит крупная
+								компания-производитель
+								интерактивного оборудования и еще ведет разработки программного обеспечения для интерактивного и
+								мультимедийного оборудования и научные изыскания в этой сфере.
+							</p>
+							<p>
+								Звоните и мы подскажем и поможем с выбором интерактивного и мультимедийного оборудования, на
+								сайте
+								выложены только самые популярные единицы оборудования.
+							</p>
+						</div>
+						<div class="interactive__read text">
+							<a href="">Читать еще</a>
+							<a href="" class="interactive__arrow"><img src="img/main-img/arrow.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="container">
+					<div class="footer__top">
+						<div class="footer__left">
+							<div class="footer__logo">
+								<div class="footer__logo-img">
+									<a href=""><img src="img/main-img/logo.png" alt=""></a>
+								</div>
+								<div class="footer__name">
+									<h2 class="h2">Видно</h2>
+									<h2 class="h2 footer__h2">Всем</h2>
+								</div>
+							</div>
+							<div class="footer__text footer-content">
+								Интерактивные и визуальные <br> решения для образования.<br>
+								Интерактивное и мультимедийное <br> оборудование.
+							</div>
+						</div>
+						<div class="footer__right">
+							<div class="footer__item">
+								<div class="footer__title">
+									Покупателям
+								</div>
+								<div class="footer__menu">
+									<ul class="footer__nav">
+										<li>
+											<a href="#" class="footer__link footer-content">О нас</a>
+										</li>
+										<li>
+											<a href="#" class="footer__link footer-content">Акции</a>
+										</li>
+										<li>
+											<a href="#" class="footer__link footer-content">Аренда</a>
+										</li>
+										<li>
+											<a href="#" class="footer__link footer-content">Доставка</a>
+										</li>
+										<li>
+											<a href="#" class="footer__link footer-content">Вендоры</a>
+										</li>
+										<li>
+											<a href="#" class="footer__link footer-content">Контакты</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer__item">
+								<div class="footer__title">
+									Контакты
+								</div>
+								<div class="footer__connection">
+									<ul class="footer__connection-nav">
+										<li>
+											<div class="footer__telephone">
+												<img src="img/main-img/telephone.png" alt="#">
+											</div>
+											<a href="tel:+7 (343) 206 11 99" class="footer__number footer-content">+7 (343) 206 11
+												99</a>
+										</li>
+										<li>
+											<div class="footer__label">
+												<img src="img/main-img/label.png" alt="#">
+											</div>
+											<a href="" class="footer__address footer-content">г. Екатеринбург, ул. Менделеева, д.
+												18</a>
+										</li>
+										<li>
+											<div class="footer__envelope">
+												<img src="img/main-img/mail.png" alt="#">
+											</div>
+											<a href="mailto:vld9@yandex.ru" class="footer__email footer-content">vld9@yandex.ru</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<ul>
+							<li class="footer-content">
+								2009-2021 © Видно Всем
+							</li>
+							<li>
+								<a href="" class="footer-content">Политика конфиденциальности</a>
+							</li>
+							<li class="footer-content">
+								Не является публичной офертой
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="developed">
+				<div class="container">
+					<div class="developed__text footer-content">
+						Разработано в Develex
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup-two">
+			<div class="popup-two__application popup__application">
+				<div class="popup-two__container">
+					<div class="popup__close">
+					</div>
+					<div class="popup-tow__title form-title">
+						Cпасибо
+					</div>
+					<div class="popup-two__text text">
+						ваша заявка успешно отправлена, наш специалист свяжется с вами в ближайшее время
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="slick/slick.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+
+</body>
+
+</html>

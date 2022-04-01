@@ -15,6 +15,28 @@
 </head>
 
 <body>
+	<svg style="display: none;">
+		<symbol viewBox="0 0 24 24" id="search">
+			<path
+				d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+				stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M21 21L16.65 16.65" stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round"
+				stroke-linejoin="round" />
+		</symbol>
+
+		<symbol viewBox="0 0 24 24" id="cart">
+			<path
+				d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+				stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			<path
+				d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+				stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			<path
+				d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+				stroke="#3D3D3D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+		</symbol>
+	</svg>
+
 	<div class="wraper">
 		<div class="header">
 			<div class="container">
@@ -23,7 +45,7 @@
 						<div class="header__menu">
 							<ul class="header__nav">
 								<li>
-									<a href="#" class="link header__link">О нас</a>
+									<a href="about.html" class="link header__link">О нас</a>
 								</li>
 								<li>
 									<a href="#" class="link header__link">Аренда</a>
@@ -48,19 +70,19 @@
 							<ul class="header__connection">
 								<li>
 									<div class="header__envelope">
-										<img src="img/mail.png" alt="#">
+										<img src="img/main-img/mail.png" alt="#">
 									</div>
 									<a href="mailto:vld9@yandex.ru" class="header__email">vld9@yandex.ru</a>
 								</li>
 								<li>
 									<div class="header__telephone-one">
-										<img src="img/telephone.png" alt="#">
+										<img src="img/main-img/telephone.png" alt="#">
 									</div>
 									<a href="tel:8 800 000 22 22" class="header__number">8 800 000 22 22</a>
 								</li>
 								<li>
 									<div class="header__telephone-tow">
-										<img src="img/telephone.png" alt="#">
+										<img src="img/main-img/telephone.png" alt="#">
 									</div>
 									<a href="tel:+7 (343) 206 11 99" class="header__number">+7 (343) 206 11 99</a>
 								</li>
@@ -72,7 +94,7 @@
 				<div class="header__bottom">
 					<div class="header__bottom-left">
 						<div class="header__logo">
-							<img src="img/logo.png" alt="">
+							<a href="index.html"><img src="img/main-img/logo.png" alt=""></a>
 						</div>
 						<div class="header__name">
 							<h2 class="h2">Видно</h2>
@@ -81,7 +103,7 @@
 					</div>
 					<div class="header__bottom-right">
 						<div class="header__catalog">
-							<button class="header__catalog-btn">
+							<button class="header__catalog-btn batton btn--yellow">
 								<a href="#" class="header__catalog-link link">Каталог</a>
 								<div class="header__menu-burger menu-burger">
 									<span></span>
@@ -222,27 +244,69 @@
 							</div>
 						</div>
 						<div class="header__categories">
-							<div class="header__categories-left">
-								<div class="header__allcategories">
-									<a href="#" class="header__allcategories-link link">Все категории</a>
-									<div class="header__allcategories-btn">
-										<img src="img/categories.png" alt="">
+							<form action="search-result.html">
+								<div class="header__categories-left">
+									<div class="header__allcategories">
+										<a href="#" class="header__allcategories-link link">Все категории</a>
+										<div class="header__allcategories-btn categories-btn">
+											<img src="img/main-img/categories.png" alt="">
+										</div>
+										<div class="header__categories-menu">
+											<ul class="header__categories-list">
+												<li>
+													<a href="#" class="categories__link link">Программное обеспечение</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Интерактивные системы</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Видеостены</a>
+												</li>
+												<li>
+													<a href="category.html" class="categories__link link">Интерактивные дисплеи</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Логопедическое оборудование</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Проекционная техника</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Мультимедийное оборудование</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Интерактивное оборудование</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Промышленное оборудование</a>
+												</li>
+												<li>
+													<a href="#" class="categories__link link">Мобильные классы</a>
+												</li>
+											</ul>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="header__categories-right">
-								<form>
-									<input class="header__search link" type="text" placeholder="Поиск">
+								<div class="header__categories-right">
+									<input class="header__search link" type="text" name="text" placeholder="Поиск">
 									<button class="header__search-btn" type="submit">
-										<img src="img/search.png" alt="">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#search"></use>
+											</svg>
+										</span>
 									</button>
-								</form>
-							</div>
+								</div>
+							</form>
 						</div>
 						<div class="header__basket">
-							<a href="">
-								<img src="img/shopping.png" alt="">
-								<span>3</span>
+							<a href="" class="header__cart cart-btn">
+								<span class="icon">
+									<svg>
+										<use xlink:href="#cart"></use>
+									</svg>
+								</span>
+								<span class="cart-counter">3</span>
 							</a>
 						</div>
 					</div>
@@ -267,7 +331,8 @@
 								<b>Ассортимент более 1000 единиц,</b> поможем подобрать нужный товар.
 							</div>
 							<div class="product__consultation-btn">
-								<a href="" class="product__consultation-link link">Получить консультацию</a>
+								<a href="" class="product__consultation-link batton btn--yellow open-popup">Получить
+									консультацию</a>
 							</div>
 						</div>
 					</div>
@@ -279,7 +344,7 @@
 								<a href="" class="product__link text">Логопедическое оборудование</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image1.png" alt="">
+								<img src="img/main-img/image1.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -289,17 +354,17 @@
 								<a href="" class="product__link text">Интерактивное оборудование</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image2.png" alt="">
+								<img src="img/main-img/image2.png" alt="">
 							</div>
 						</div>
 					</div>
 					<div class="product__column">
 						<div class="product__item">
 							<div class="product__equipment">
-								<a href="" class="product__link text">Интерактивные дисплеи</a>
+								<a href="category.html" class="product__link text">Интерактивные дисплеи</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image3.png" alt="">
+								<img src="img/main-img/image3.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -309,7 +374,7 @@
 								<a href="" class="product__link text">Интерактивные <br> системы</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image4.png" alt="">
+								<img src="img/main-img/image4.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -319,7 +384,7 @@
 								<a href="" class="product__link text">Видеостены</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image5.png" alt="">
+								<img src="img/main-img/image5.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -329,7 +394,7 @@
 								<a href="" class="product__link text">Мобильные классы</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image6.png" alt="">
+								<img src="img/main-img/image6.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -339,7 +404,7 @@
 								<a href="" class="product__link text">Мультимедийное оборудование</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image7.png" alt="">
+								<img src="img/main-img/image7.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -349,7 +414,7 @@
 								<a href="" class="product__link text">Программное обеспечение</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image8.png" alt="">
+								<img src="img/main-img/image8.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -359,7 +424,7 @@
 								<a href="" class="product__link text">Проекционная техника</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image9.png" alt="">
+								<img src="img/main-img/image9.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -369,7 +434,7 @@
 								<a href="" class="product__link text">Промышленное оборудование</a>
 							</div>
 							<div class="product__img">
-								<img src="img/image10.png" alt="">
+								<img src="img/main-img/image10.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -400,14 +465,14 @@
 										89 000 ₽
 									</div>
 									<div class="multimedia__button">
-										<a href="" class="multimedia__more link">Подробнее</a>
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
 									</div>
 								</div>
 							</div>
 							<div class="multimedia__slider-right">
 								<div class="multimedia__item">
 									<div class="multimedia__img">
-										<img src="img/panel1.png" alt="">
+										<img src="img/main-img/panel1.png" alt="">
 									</div>
 								</div>
 							</div>
@@ -424,14 +489,254 @@
 										103 000 ₽
 									</div>
 									<div class="multimedia__button">
-										<a href="" class="multimedia__more link">Подробнее</a>
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
 									</div>
 								</div>
 							</div>
 							<div class="multimedia__slider-right">
 								<div class="multimedia__item">
 									<div class="multimedia__img">
-										<img src="img/panel2.png" alt="">
+										<img src="img/main-img/panel2.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										89 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										103 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel2.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										89 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										103 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel2.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										89 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										103 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel2.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										89 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										103 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel2.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										89 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="multimedia__slider-column">
+						<div class="multimedia__slider-item">
+							<div class="multimedia__slider-left">
+								<div class="multimedia__slider-top">
+									Сенсорная панель 40″ Samsung
+								</div>
+								<div class="multimedia__slider-bottom">
+									<div class="multimedia__price">
+										103 000 ₽
+									</div>
+									<div class="multimedia__button">
+										<a href="" class="multimedia__more batton btn--yellow">Подробнее</a>
+									</div>
+								</div>
+							</div>
+							<div class="multimedia__slider-right">
+								<div class="multimedia__item">
+									<div class="multimedia__img">
+										<img src="img/main-img/panel2.png" alt="">
 									</div>
 								</div>
 							</div>
@@ -459,7 +764,7 @@
 				</div>
 				<div class="interactive__read text">
 					<a href="">Читать еще</a>
-					<a href="" class="interactive__arrow"><img src="img/arrow.png" alt=""></a>
+					<a href="" class="interactive__arrow"><img src="img/main-img/arrow.png" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -469,7 +774,7 @@
 					<div class="footer__left">
 						<div class="footer__logo">
 							<div class="footer__logo-img">
-								<img src="img/logo.png" alt="">
+								<a href=""><img src="img/main-img/logo.png" alt=""></a>
 							</div>
 							<div class="footer__name">
 								<h2 class="h2">Видно</h2>
@@ -481,61 +786,64 @@
 							Интерактивное и мультимедийное <br> оборудование.
 						</div>
 					</div>
-					<div class="footer__buyers">
-						<div class="footer__title">
-							Покупателям
+					<div class="footer__right">
+						<div class="footer__item">
+							<div class="footer__title">
+								Покупателям
+							</div>
+							<div class="footer__menu">
+								<ul class="footer__nav">
+									<li>
+										<a href="#" class="footer__link footer-content">О нас</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Акции</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Аренда</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Доставка</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Вендоры</a>
+									</li>
+									<li>
+										<a href="#" class="footer__link footer-content">Контакты</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="footer__menu">
-							<ul class="footer__nav">
-								<li>
-									<a href="#" class="footer__link footer-content">О нас</a>
-								</li>
-								<li>
-									<a href="#" class="footer__link footer-content">Акции</a>
-								</li>
-								<li>
-									<a href="#" class="footer__link footer-content">Аренда</a>
-								</li>
-								<li>
-									<a href="#" class="footer__link footer-content">Доставка</a>
-								</li>
-								<li>
-									<a href="#" class="footer__link footer-content">Вендоры</a>
-								</li>
-								<li>
-									<a href="#" class="footer__link footer-content">Контакты</a>
-								</li>
-							</ul>
+						<div class="footer__item">
+							<div class="footer__title">
+								Контакты
+							</div>
+							<div class="footer__connection">
+								<ul class="footer__connection-nav">
+									<li>
+										<div class="footer__telephone">
+											<img src="img/main-img/telephone.png" alt="#">
+										</div>
+										<a href="tel:+7 (343) 206 11 99" class="footer__number footer-content">+7 (343) 206 11
+											99</a>
+									</li>
+									<li>
+										<div class="footer__label">
+											<img src="img/main-img/label.png" alt="#">
+										</div>
+										<a href="" class="footer__address footer-content">г. Екатеринбург, ул. Менделеева, д.
+											18</a>
+									</li>
+									<li>
+										<div class="footer__envelope">
+											<img src="img/main-img/mail.png" alt="#">
+										</div>
+										<a href="mailto:vld9@yandex.ru" class="footer__email footer-content">vld9@yandex.ru</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
-					<div class="footer__contact">
-						<div class="footer__title">
-							Контакты
-						</div>
-						<div class="footer__connection">
-							<ul class="footer__connection-nav">
-								<li>
-									<div class="footer__telephone">
-										<img src="img/telephone.png" alt="#">
-									</div>
-									<a href="tel:+7 (343) 206 11 99" class="footer__number footer-content">+7 (343) 206 11 99</a>
-								</li>
-								<li>
-									<div class="footer__label">
-										<img src="img/label.png" alt="#">
-									</div>
-									<a href="" class="footer__address footer-content">г. Екатеринбург, ул. Менделеева, д. 18</a>
-								</li>
-								<li>
-									<div class="footer__envelope">
-										<img src="img/mail.png" alt="#">
-									</div>
-									<a href="mailto:vld9@yandex.ru" class="footer__email footer-content">vld9@yandex.ru</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
 				</div>
 				<div class="footer__bottom">
 					<ul>
@@ -556,6 +864,49 @@
 			<div class="container">
 				<div class="developed__text footer-content">
 					Разработано в Develex
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup -->
+	<div class="popup">
+		<div class="popup__application">
+			<div class="popup__container">
+				<div class="popup__close">
+
+				</div>
+				<div class="popup__title form-title">
+					Оставьте заявку
+				</div>
+				<div class="popup__text text">
+					наш специалист свяжется с вами в ближайшее время
+				</div>
+				<form action="">
+					<input class="popup__fone input" type="tel" name="popup-form" placeholder="+7 (___) ___-__-__">
+					<input class="popup__email input" type="text" name="email" id="email" placeholder="email"
+						required="required">
+					<div class="popup__callback">
+						<a href="#" class="popup__link batton btn--yellow open-popup-two">Отправить заявку</a>
+					</div>
+					<div class="popup__agree">
+						Нажимая кнопку я соглашаюсь <br> с <a href="">политикой конфиденциальности</a>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<div class="popup-two">
+		<div class="popup-two__application popup__application">
+			<div class="popup-two__container">
+				<div class="popup__close">
+				</div>
+				<div class="popup-tow__title form-title">
+					Cпасибо
+				</div>
+				<div class="popup-two__text text">
+					ваша заявка успешно отправлена, наш специалист свяжется с вами в ближайшее время
 				</div>
 			</div>
 		</div>
