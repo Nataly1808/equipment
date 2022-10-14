@@ -1,0 +1,113 @@
+.basket__title {
+	padding-top: 0.4em;
+	padding-bottom: 0.45em;
+}
+
+.basket__main {
+	display: flex;
+	flex-direction: column;
+}
+
+.basket__main-column {
+	
+}
+
+.basket__main-item {
+	display: flex;
+	padding: 3.2em 4.7em 4.8em 4em;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-bottom: 1.8em;
+}
+
+.basket__main-name {
+	display: flex;
+	align-items: center;
+	max-width: 26.5%;
+}
+
+.basket__main-img {
+	margin-right: 2.5em;
+}
+
+.basket__main-category {
+	
+}
+
+.category__name {
+	
+}
+
+.basket__main-counter {
+	display: flex;
+	align-items: center;
+	margin-left: 16.1em;
+	margin-right: 18.9em;
+}
+
+.basket__main-minus,
+.basket__main-plus {
+	border: solid 1px #EBEBEB;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.basket__main-minus img,
+.basket__main-plus img {
+	padding: 0.98em;
+	
+}
+
+.basket__main-amount {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 2.2rem;
+	line-height: 1.18;
+	text-align: center;
+	color: #3D3D3D;
+	padding: 0 1.18em;
+}
+
+.basket__main-price {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1 0 auto;
+}
+
+.basket__main-sum {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 2.2rem;
+	line-height: 1.18;
+	color: #3D3D3D;
+	margin-right: 5.4em;
+}
+
+.basket__main-order {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-top: 1.4em;
+	margin-bottom: 19.3em;
+}
+
+.basket__main-total {
+	margin-right: 0.83em;
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.16;
+	color: #3D3D3D;
+}
+
+.basket__main-btn {
+	padding: 1.28em 2.5em;
+	border-radius: 10px;
+}
+
+.basket__main-link {
+	
+}
+
+

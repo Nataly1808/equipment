@@ -14,6 +14,22 @@ $(document).ready(function () {
 		dots: false,
 		arrows: true
 	});
+
+	$('.card__slider-transition').slick({
+		infinite: true,
+		slidesToShow: 6,
+		slidesToScroll: 6,
+		dots: false,
+		arrows: true
+	});
+	
+	$('.card__video-slider').slick({
+		infinite: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		dots: false,
+		arrows: true
+	});
 });
 
 $(document).ready(function () {
@@ -31,7 +47,6 @@ $(document).ready(function () {
 		$(this).addClass('active-page');
 	})
 
-	
 });
 
 /* popup */

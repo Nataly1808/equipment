@@ -1,8 +1,5 @@
 .card {
-	margin-top: 2.8em;
-	padding-top: 1.9em;
 	padding-bottom: 7.4em;
-	background-image: url(../img/main-img/fone.png);
 }
 
 .card__title {
@@ -19,10 +16,6 @@
 	flex: 0 1 48.5%;
 }
 
-.card__slider {
-	
-}
-
 .card__slider-main {
 	position: relative;
 	width: 544px;
@@ -35,13 +28,10 @@
 	box-shadow: 0px 1px 2px 0px #00000014;
 }
 
-.slider__main-img img {
+.slider__main-img {
 	position: absolute;
 	top: 21.4%;
 	left: 20.4%;
-}
-
-.slider__button {
 }
 
 .slider__increase {
@@ -54,24 +44,42 @@
 	background-color: #fff;
 }
 
-.slider__btn {
-}
-
 .card__slider-transition {
 	display: flex;
 	justify-content: space-between;
+	width: 544px;
+	margin: 0 -0.5em;
 }
 
-.transition__item {
+.card__slider-column {
+	padding: 0 0.5em;
+}
+
+.card__slider-item {
 	width: 82px;
 	height: 82px;
-	border: 1px solid #fff;
-	border-radius: 10px;
-	box-shadow: 0px 1px 2px 0px #00000014;
-	background-color: #fff;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+   background-color: #fff;
+}
+
+.card__right {
+	flex: 0 1 48.5%;
+}
+
+.slick-prev, .slick-next {
+	top: -53px;
+	z-index: 0;
+}
+
+.slick-prev {
+	left: 428px;
+}
+
+.slick-next {
+	right: 13px;
 }
 
 .card__main-right {
@@ -154,10 +162,183 @@
 	color: #255EF0;
 }
 
+.card__info {
+	margin-top: 5.4em;
+	margin-bottom: 3.2em;
+	width: 65.7%;
+}
+
+.card__info-menu {
+	width: 70%;
+}
+
+.card__info-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card__info-list {
+	padding-bottom: 0.7em;
+	border-bottom: #C4C4C4 1px solid;
+}
+
+.card__info-link {
+	font-family: Roboto;
+	font-size: 1.6rem;
+	line-height: 1.12;
+	color: #000000;
+}
+
+.card__info-link:focus, .card__info-link:hover {
+	padding-bottom: 0.35em;
+	border-bottom: #255EF0 3px solid;
+	border-radius: 2px;
+}
+
+.card__info-text {
+	margin-top: 2.06em;
+}
+
+.card__info-text p {
+	padding-bottom: 1.43em;
+}
+
+.card__video-slider {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -1.6em;
+}
+
+.card__video-column {
+	position: relative;
+	padding: 0 1.6em;
+}
+
+.card__video-item {
+	display: flex;
+   justify-content: center;
+   align-items: center;
+	height: 346px;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.card__video-play {
+	position: absolute;
+	left: 236px;
+	top: 134px;
+	padding: 2.8em 2.7em 2.8em 3.2em;
+	border-radius: 50%;
+	background-color: #F8CA29;
+}
+
+.card__video-slider .slick-arrow{
+	position: absolute;
+	top: 50%;
+	right: 30%;
+	height: 46px;
+	width: 46px;
+	border-radius: 10px;
+	box-shadow: 0px 1px 34px 0px #0000001F;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.card__video-slider .slick-arrow:hover,
+.card__video-slider .slick-arrow:active,
+.card__video-slider .slick-arrow:focus {
+	border: 1px solid #255EF0;
+	
+}
+
+.card__video-slider .slick-arrow::before {
+	content: '';
+	position: absolute;
+	border: solid #3D3D3D;
+   border-width: 0 1.6px 1.6px 0;
+   display: inline-block;
+   padding: 0.3em 0.2em 0.2em 0.3em; 
+}
+
+.card__video-slider .slick-prev{
+	position: absolute;
+	left: -50px;
+	z-index: 2;
+}
+
+.card__video-slider .slick-prev::before {
+	position: absolute;
+	left: 20px;
+	top: 16px;
+	transform: rotate(135deg);
+}
+
+.card__video-slider .slick-next{
+	position: absolute;
+	right: -50px;
+	z-index: 2;
+}
+
+.card__video-slider .slick-next::before {
+	position: absolute;
+	right: 20px;
+	top: 16px;
+	transform: rotate(-45deg);
+}
+
+.card__download {
+	margin-top: 7.4em;
+	display: flex;
+}
+
+.card__download-column {
+	padding-right: 2em;
+
+}
+.card__download-item {
+	display: flex;
+	padding: 1.6em 2.6em 0 1.66em;
+	background-color: #255EF0;
+	border-radius: 10px;
+}
+
+.card__download-img {
+	padding-right: 1.8em;
+}
+
+.card__download-file {
+	display: flex;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 1.4rem;
+	line-height: 1.28;
+	padding-bottom: 0.42em;
+}
+
+.card__download-file a {
+	color: #fff;
+}
+
+.card__download-file p {
+	padding-left: 0.35em;
+	opacity: 0.3;
+}
+
+.card__download-batton a {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 1.14;
+	color: #F8CA29;
+}
+
+.card__form {
+	padding-top: 6.8em;
+}
 /* //////////////////////////// */
 
 
-.main {
+/* .main {
 	background: url(../img/main-img/fone.png);
 	margin-top: 2.9em;
 	padding: 2em 0 6.8em 0;
@@ -274,4 +455,4 @@ textarea.input {
 .agree__politics:hover {
 	text-decoration: underline;
 	font-weight: normal; 
-}
+} */

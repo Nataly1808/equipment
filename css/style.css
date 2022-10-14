@@ -125,6 +125,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+	padding-bottom: 2.8em;
 }
 
 .header__bottom-left {
@@ -150,10 +151,6 @@ body{
 .header__bottom-right {
 	display: flex;
 	justify-content: space-between;
-}
-
-.header__catalog {
-	
 }
 
 .header__catalog-btn {
@@ -184,9 +181,6 @@ body{
 
 .header__catalog-link:visited {
 	color: #3D3D3D;
-}
-
-.header__menu-burger {
 }
 
 .menu-burger {
@@ -249,6 +243,7 @@ body{
 	border-radius: 10px;
 	left: 0;
 	top: calc(100%-1.2rem);
+	z-index: 1;
 }
 
 .header__chapter {
@@ -446,8 +441,11 @@ body{
 /* product */
 
 .product {
+	margin-bottom: 6em;
+}
+
+.fone {
 	background: url(../img/main-img/fone.png);
-	margin: 2.8em 0 6em 0;
 }
 
 .product__top {
